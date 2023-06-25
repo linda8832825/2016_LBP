@@ -1,0 +1,99 @@
+ncverilog: 15.20-s039: (c) Copyright 1995-2017 Cadence Design Systems, Inc.
+TOOL:	ncverilog	15.20-s039: Started on Jun 25, 2023 at 16:45:28 CST
+ncverilog
+	testfixture.v
+	LBP.v
+	+access+r
+Recompiling... reason: file './LBP.v' is newer than expected.
+	expected: Sun Jun 25 16:44:03 2023
+	actual:   Sun Jun 25 16:45:23 2023
+file: testfixture.v
+ #`End_CYCLE ;
+           |
+ncvlog: *W,INTOVF (testfixture.v,106|11): bit overflow during conversion from text [2.5(IEEE)] (32 bits).
+(`define macro: End_CYCLE [testfixture.v line 4], file: testfixture.v line 106)
+file: LBP.v
+	module worklib.LBP:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.LBP:v <0x3f8b32c7>
+			streams:  16, words: 14331
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                  Instances  Unique
+		Modules:                  3       3
+		Registers:               30      30
+		Scalar wires:             7       -
+		Vectored wires:           4       -
+		Always blocks:           13      13
+		Initial blocks:          16      16
+		Pseudo assignments:       1       1
+		Simulation timescale:  10ps
+	Writing initial simulation snapshot: worklib.testfixture:v
+Loading snapshot worklib.testfixture:v .................... Done
+*Verdi* Loading libsscore_ius152.so
+ncsim> source /usr/cad/cadence/INCISIV/cur/tools/inca/files/ncsimrc
+ncsim> run
+FSDB Dumper for IUS, Release Verdi_Q-2020.03, Linux, 02/09/2020
+(C) 1996 - 2020 by Synopsys, Inc.
+*Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+*Verdi* : Create FSDB file 'LBP.fsdb'
+*Verdi* : Begin traversing the scope (testfixture), layer (0).
+*Verdi* : Enable +mda dumping.
+*Verdi* : End of traversing.
+-----------------------------------------------------
+
+START!!! Simulation Start .....
+
+-----------------------------------------------------
+
+Output pixel: 0 ~           0 are correct!
+
+Output pixel: 0 ~        1000 are correct!
+
+Output pixel: 0 ~        2000 are correct!
+
+Output pixel: 0 ~        3000 are correct!
+
+Output pixel: 0 ~        4000 are correct!
+
+Output pixel: 0 ~        5000 are correct!
+
+Output pixel: 0 ~        6000 are correct!
+
+Output pixel: 0 ~        7000 are correct!
+
+Output pixel: 0 ~        8000 are correct!
+
+Output pixel: 0 ~        9000 are correct!
+
+Output pixel: 0 ~       10000 are correct!
+
+Output pixel: 0 ~       11000 are correct!
+
+Output pixel: 0 ~       12000 are correct!
+
+Output pixel: 0 ~       13000 are correct!
+
+Output pixel: 0 ~       14000 are correct!
+
+Output pixel: 0 ~       15000 are correct!
+
+Output pixel: 0 ~       16000 are correct!
+
+Output pixel: 0 ~       16383 are correct!
+
+-----------------------------------------------------
+
+Congratulations! All data have been generated successfully!
+
+-------------------------PASS------------------------
+
+Simulation complete via $finish(1) at time 2579925 NS + 0
+./testfixture.v:128       #(`CYCLE/2); $finish;
+ncsim> exit
+TOOL:	ncverilog	15.20-s039: Exiting on Jun 25, 2023 at 16:45:31 CST  (total: 00:00:03)
