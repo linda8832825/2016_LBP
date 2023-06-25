@@ -77,9 +77,9 @@ argv[1]=testfixture.v
 argv[2]=LBP.v
 argv[3]=+access+r
 78 profile - 100
-          CPU/Mem usage: 0.050 sys,  0.020 user,  61.45M sys,  0.00M vm
+          CPU/Mem usage: 0.050 sys,  0.030 user,  61.44M sys,  0.00M vm
 79 VC callback profile - scalar:0 vector:0
-80 Sun Jun 25 16:45:29 2023
+80 Sun Jun 25 19:17:32 2023
 81 pliAppInit
 82 FSDB_GATE is disabled.
 83 Enable Parallel Dumping.
@@ -88,7 +88,7 @@ argv[3]=+access+r
 86 LIBSSCORE=found /usr/cad/synopsys/verdi/cur/share/PLI/IUS/LINUX/libsscore_ius152.so through $LD_LIBRARY_PATH setting.
 87 argv[0]: LBP.fsdb
 88 argv[0]: 0
-89 argv[1]: (handle)0xb08a738 testfixture
+89 argv[1]: (handle)0xbcaf930 testfixture
 90 argv[2]: +mda
 91 FSDB Dumper for IUS, Release Verdi_Q-2020.03, Linux, 02/09/2020
 92 (C) 1996 - 2020 by Synopsys, Inc.
@@ -98,44 +98,44 @@ argv[3]=+access+r
 96 *Verdi* : Create FSDB file 'LBP.fsdb'
 97 sps_call_fsdbDumpvars at 0 : /home/t111368148/Desktop/2016_LBP/testfixture.v(53)
 98 argv[0]: 0
-99 argv[1]: (handle)0xb08a738 testfixture
+99 argv[1]: (handle)0xbcaf930 testfixture
 100 argv[2]: +mda
 101 *Verdi* : Begin traversing the scope (testfixture), layer (0).
 102 *Verdi* : Enable +mda dumping.
 103 *Verdi* : End of traversing.
 104 fsdbDumpvars traverse var: profile - 
-          CPU/Mem usage: 0.060 sys,  0.230 user,  148.17M sys,  0.00M vm
-                   incr: 0.010 sys,  0.200 user,  7.90M sys,  0.00M vm
-                   accu: 0.010 sys,  0.200 user,  7.90M sys,  0.00M vm
-              accu incr: 0.010 sys,  0.200 user,  7.90M sys,  0.00M vm
+          CPU/Mem usage: 0.060 sys,  0.250 user,  148.20M sys,  0.00M vm
+                   incr: 0.000 sys,  0.210 user,  7.91M sys,  0.00M vm
+                   accu: 0.000 sys,  0.210 user,  7.91M sys,  0.00M vm
+              accu incr: 0.000 sys,  0.210 user,  7.91M sys,  0.00M vm
 
           Count usage: 49209 var,  49205 idcode,  49208 callback
                  incr: 49209 var,  49205 idcode,  49208 callback
                  accu: 49209 var,  49205 idcode,  49208 callback
             accu incr: 49209 var,  49205 idcode,  49208 callback
 105 VC callback profile - scalar:0 vector:0
-106 Sun Jun 25 16:45:29 2023
+106 Sun Jun 25 19:17:32 2023
 107 fsdbDumpvars: profile - 
-          CPU/Mem usage: 0.060 sys,  0.260 user,  150.75M sys,  0.00M vm
-                   incr: 0.000 sys,  0.030 user,  2.58M sys,  0.00M vm
-                   accu: 0.010 sys,  0.230 user,  10.48M sys,  0.00M vm
-              accu incr: 0.000 sys,  0.030 user,  2.58M sys,  0.00M vm
+          CPU/Mem usage: 0.070 sys,  0.300 user,  150.78M sys,  0.00M vm
+                   incr: 0.010 sys,  0.050 user,  2.58M sys,  0.00M vm
+                   accu: 0.010 sys,  0.260 user,  10.49M sys,  0.00M vm
+              accu incr: 0.010 sys,  0.050 user,  2.58M sys,  0.00M vm
 
           Count usage: 49209 var,  49205 idcode,  49208 callback
                  incr: 0 var,  0 idcode,  0 callback
                  accu: 49209 var,  49205 idcode,  49208 callback
             accu incr: 0 var,  0 idcode,  0 callback
 108 VC callback profile - scalar:23 vector:49182
-109 Sun Jun 25 16:45:29 2023
+109 Sun Jun 25 19:17:32 2023
 110 End of simulation at 257992500
-111 VC callback profile - scalar:1121960 vector:1466872
-112 Sun Jun 25 16:45:30 2023
+111 VC callback profile - scalar:1121960 vector:1091772
+112 Sun Jun 25 19:17:33 2023
 113 Begin FSDB profile info:
-114 FSDB Writer : bc1(1121960) bcn(1466872) mtf/stf(0/0)
-FSDB Writer elapsed time : flush(0.407008) io wait(0.000000) theadpool wait(0.000000)
+114 FSDB Writer : bc1(1121960) bcn(1091772) mtf/stf(0/0)
+FSDB Writer elapsed time : flush(0.307756) io wait(0.000000) theadpool wait(0.000000)
 FSDB Writer cpu time : MT Compression : 0
 115 End FSDB profile info
-116 Parallel profile    -  Flush:3 Expand:0 ProduceWait:0 ConsumerWait:13 BlockUsed:16
-117                        ProduceTime:1.512346931 ConsumerTime:0.554432715 Buffer:64MB
+116 Parallel profile    -  Flush:3 Expand:0 ProduceWait:0 ConsumerWait:11 BlockUsed:14
+117                        ProduceTime:1.505196027 ConsumerTime:0.442698339 Buffer:64MB
 118 SimExit
 119 Sim process exit

@@ -55,3 +55,7 @@ s54(25Jun2023:16:38:50):  ncverilog testfixture.v LBP.v +access+r
 s55(25Jun2023:16:39:39):  ncverilog testfixture.v LBP.v +access+r 
 s56(25Jun2023:16:44:14):  ncverilog testfixture.v LBP.v +access+r 
 s57(25Jun2023:16:45:28):  ncverilog testfixture.v LBP.v +access+r 
+s58(25Jun2023:19:06:25):  ncverilog testfixture.v LBP.v +access+r 
+s59(25Jun2023:19:14:33):  ncverilog testfixture.v LBP.v +access+r 
+s60(25Jun2023:19:16:34):  ncverilog testfixture.v LBP.v +access+r 
+s61(25Jun2023:19:17:31):  ncverilog testfixture.v LBP.v +access+r 

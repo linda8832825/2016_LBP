@@ -1,12 +1,12 @@
 ncverilog: 15.20-s039: (c) Copyright 1995-2017 Cadence Design Systems, Inc.
-TOOL:	ncverilog	15.20-s039: Started on Jun 25, 2023 at 16:45:28 CST
+TOOL:	ncverilog	15.20-s039: Started on Jun 25, 2023 at 19:17:31 CST
 ncverilog
 	testfixture.v
 	LBP.v
 	+access+r
 Recompiling... reason: file './LBP.v' is newer than expected.
-	expected: Sun Jun 25 16:44:03 2023
-	actual:   Sun Jun 25 16:45:23 2023
+	expected: Sun Jun 25 19:16:33 2023
+	actual:   Sun Jun 25 19:17:28 2023
 file: testfixture.v
  #`End_CYCLE ;
            |
@@ -19,8 +19,8 @@ file: LBP.v
 	Elaborating the design hierarchy:
 	Building instance overlay tables: .................... Done
 	Generating native compiled code:
-		worklib.LBP:v <0x3f8b32c7>
-			streams:  16, words: 14331
+		worklib.LBP:v <0x7f27f0d4>
+			streams:  22, words: 18581
 	Building instance specific data structures.
 	Loading native compiled code:     .................... Done
 	Design hierarchy summary:
@@ -96,4 +96,4 @@ Congratulations! All data have been generated successfully!
 Simulation complete via $finish(1) at time 2579925 NS + 0
 ./testfixture.v:128       #(`CYCLE/2); $finish;
 ncsim> exit
-TOOL:	ncverilog	15.20-s039: Exiting on Jun 25, 2023 at 16:45:31 CST  (total: 00:00:03)
+TOOL:	ncverilog	15.20-s039: Exiting on Jun 25, 2023 at 19:17:34 CST  (total: 00:00:03)

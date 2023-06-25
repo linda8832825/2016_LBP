@@ -49,7 +49,7 @@ end
 always@(posedge clk or posedge reset)begin
     if(reset) pt <= 14'd0;
     else begin
-        case(cur_state)
+        case(nx_state)
             STATE_IDLE: pt <= 14'd0;
             STATE_RD:  pt <= pt; 
             STATE_CAL: pt <= pt;
@@ -67,8 +67,8 @@ always@(posedge clk or posedge reset)begin
         gray_addr <= 14'd0;
     end
     else begin
-        if(cur_state == STATE_RD) begin
-            // if(pt % 8'd128 == 0)begin
+        if(nx_state == STATE_RD) begin
+            if(pt % 8'd128 == 0)begin
                 case(count)
                     0: gray_addr <= pt;
                     1: gray_addr <= pt + 14'd1;
@@ -81,14 +81,14 @@ always@(posedge clk or posedge reset)begin
                     8: gray_addr <= pt + 14'd258;
                     default: gray_addr <= 14'd0;
                 endcase
-            // end
-        //     else begin
-        //         case(count)
-        //             0: gray_addr = pt + 14'd2;
-        //             1: gray_addr = pt + 14'd130;
-        //             2: gray_addr = pt + 14'd258;
-        //         endcase
-        //     end
+            end
+            else begin
+                case(count)
+                    0: gray_addr = pt + 14'd2;
+                    1: gray_addr = pt + 14'd130;
+                    2: gray_addr = pt + 14'd258;
+                endcase
+            end
         end
         else gray_addr <= 14'd0;
     end
@@ -102,25 +102,30 @@ always@(posedge clk or posedge reset)begin
         end
     end
     else begin
-        // if(pt % 8'd128 == 0) begin
+        if(pt % 8'd128 == 0) begin
             data[count - 4'd1] <= (count >= 4'd1) ? gray_data : data[count];
-        // end
-        // else begin
-        //     case(count)
-        //         0: begin
-        //             data[0] <= data[1];
-        //             data[1] <= data[2];
-        //             data[3] <= data[4];
-        //             data[4] <= data[5];
-        //             data[6] <= data[7];
-        //             data[7] <= data[8];
+        end
+        else begin
+            case(count)
+                1: begin
+                    data[0] <= data[1];
+                    data[1] <= data[2];
+                    data[3] <= data[4];
+                    data[4] <= data[5];
+                    data[6] <= data[7];
+                    data[7] <= data[8];
                     
-        //             data[2] <=gray_data;
-        //         end
-        //         1: data[5] <=gray_data;
-        //         2: data[8] <=gray_data;
-        //     endcase
-        // end
+                    data[2] <= gray_data;
+                end
+                2: data[5] <= gray_data;
+                3: data[8] <= gray_data;
+                default: begin
+                    for(i=0 ; i<=4'd8 ; i=i+1)begin
+                        data[i] <= data[i];
+                    end
+                end
+            endcase
+        end
     end
 end
 
