@@ -22,7 +22,7 @@ reg     [7:0]   data    [0:8];
 reg     [13:0]  pt;
 
 reg     s       [0:8];
-reg     [7:0]   sol;
+wire    [7:0]   sol;
 
 parameter       STATE_IDLE=2'b00, STATE_RD=2'b01, STATE_CAL=2'b10, STATE_SD=2'b11;
 //====================================================================
@@ -84,9 +84,9 @@ always@(posedge clk or posedge reset)begin
             end
             else begin
                 case(count)
-                    0: gray_addr = pt + 14'd2;
-                    1: gray_addr = pt + 14'd130;
-                    2: gray_addr = pt + 14'd258;
+                    0: gray_addr <= pt + 14'd2;
+                    1: gray_addr <= pt + 14'd130;
+                    2: gray_addr <= pt + 14'd258;
                 endcase
             end
         end
@@ -148,19 +148,14 @@ always@(*) begin
 end
 
 //sol
-always@(*)begin
-    if(cur_state == STATE_CAL) begin
-        sol = s[0]*2**0 +
-              s[1]*2**1 +
-              s[2]*2**2 +
-              s[3]*2**3 +
-              s[5]*2**4 +
-              s[6]*2**5 +
-              s[7]*2**6 +
-              s[8]*2**7 ;
-    end
-    else sol = sol;
-end
+assign sol = s[0]*2**0 +
+             s[1]*2**1 +
+             s[2]*2**2 +
+             s[3]*2**3 +
+             s[5]*2**4 +
+             s[6]*2**5 +
+             s[7]*2**6 +
+             s[8]*2**7 ;
 
 //================================================================
 // STATE_SD

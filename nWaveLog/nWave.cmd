@@ -200,3 +200,19 @@ wvSetCursor -win $_nWave1 19342.161641 -snap {("G1" 6)}
 wvSetCursor -win $_nWave1 18091.907847 -snap {("G1" 3)}
 wvSetCursor -win $_nWave1 19293.132081 -snap {("G1" 3)}
 wvSetCursor -win $_nWave1 20543.385875 -snap {("G1" 3)}
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvSetCursor -win $_nWave1 25495.371492 -snap {("G1" 17)}
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvSetCursor -win $_nWave1 20518.871095 -snap {("G1" 3)}
+wvSetCursor -win $_nWave1 19195.072960 -snap {("G1" 3)}
+wvSetCursor -win $_nWave1 31624.066562 -snap {("G1" 33)}
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvSetCursor -win $_nWave1 19342.161641 -snap {("G1" 11)}
+wvSaveSignal -win $_nWave1 "/home/t111368148/Desktop/2016_LBP/signal.rc"
+wvExit
