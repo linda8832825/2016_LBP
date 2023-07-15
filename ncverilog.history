@@ -70,3 +70,6 @@ s69(15Jul2023:14:05:33):  ncverilog testfixture.v LBP.v +access+r
 s70(15Jul2023:14:06:00):  ncverilog testfixture.v LBP.v +access+r 
 s71(15Jul2023:14:18:03):  ncverilog testfixture.v LBP_syn.v tsmc18.v +define+SDF 
 s72(15Jul2023:14:22:17):  ncverilog testfixture.v LBP.v +access+r 
+s73(15Jul2023:15:13:58):  ncverilog testfixture.v LBP.v +access+r 
+s74(15Jul2023:15:25:15):  ncverilog testfixture.v syn.v tsmc13_neg.v +define+SDF 
+s75(15Jul2023:15:25:35):  ncverilog testfixture.v LBP_syn.v tsmc13_neg.v +define+SDF 

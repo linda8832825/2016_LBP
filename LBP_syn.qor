@@ -3,15 +3,15 @@
 Report : qor
 Design : LBP
 Version: Q-2019.12
-Date   : Sat Jul 15 14:10:19 2023
+Date   : Sat Jul 15 15:22:55 2023
 ****************************************
 
 
   Timing Path Group 'clk'
   -----------------------------------
-  Levels of Logic:              19.00
-  Critical Path Length:          9.54
-  Critical Path Slack:           0.07
+  Levels of Logic:              10.00
+  Critical Path Length:          4.34
+  Critical Path Slack:           0.30
   Critical Path Clk Period:     10.00
   Total Negative Slack:          0.00
   No. of Violating Paths:        0.00
@@ -25,12 +25,12 @@ Date   : Sat Jul 15 14:10:19 2023
   -----------------------------------
   Hierarchical Cell Count:          1
   Hierarchical Port Count:         28
-  Leaf Cell Count:                908
-  Buf/Inv Cell Count:             176
-  Buf Cell Count:                  55
-  Inv Cell Count:                 121
+  Leaf Cell Count:                813
+  Buf/Inv Cell Count:             133
+  Buf Cell Count:                  65
+  Inv Cell Count:                  68
   CT Buf/Inv Cell Count:            0
-  Combinational Cell Count:       788
+  Combinational Cell Count:       693
   Sequential Cell Count:          120
   Macro Count:                      0
   -----------------------------------
@@ -38,21 +38,21 @@ Date   : Sat Jul 15 14:10:19 2023
 
   Area
   -----------------------------------
-  Combinational Area:    13252.377735
-  Noncombinational Area:  8399.160072
-  Buf/Inv Area:           1669.852812
-  Total Buffer Area:           858.21
-  Total Inverter Area:         811.64
+  Combinational Area:     6721.703933
+  Noncombinational Area:  3926.086071
+  Buf/Inv Area:           1086.336006
+  Total Buffer Area:           624.64
+  Total Inverter Area:         461.69
   Macro/Black Box Area:      0.000000
-  Net Area:             119140.598236
+  Net Area:             110460.558014
   -----------------------------------
-  Cell Area:             21651.537807
-  Design Area:          140792.136044
+  Cell Area:             10647.790004
+  Design Area:          121108.348018
 
 
   Design Rules
   -----------------------------------
-  Total Number of Nets:           933
+  Total Number of Nets:           898
   Nets With Violations:             0
   Max Trans Violations:             0
   Max Cap Violations:               0
@@ -63,12 +63,12 @@ Date   : Sat Jul 15 14:10:19 2023
 
   Compile CPU Statistics
   -----------------------------------------
-  Resource Sharing:                    0.72
-  Logic Optimization:                  1.35
-  Mapping Optimization:                1.37
+  Resource Sharing:                    0.73
+  Logic Optimization:                  0.76
+  Mapping Optimization:                1.73
   -----------------------------------------
-  Overall Compile Time:                6.41
-  Overall Compile Wall Clock Time:     7.45
+  Overall Compile Time:                5.58
+  Overall Compile Wall Clock Time:     5.97
 
   --------------------------------------------------------------------
 

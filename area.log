@@ -3,29 +3,28 @@
 Report : area
 Design : LBP
 Version: Q-2019.12
-Date   : Sat Jul 15 14:10:19 2023
+Date   : Sat Jul 15 15:22:55 2023
 ****************************************
 
-Information: Updating design information... (UID-85)
 Library(s) Used:
 
-    slow (File: /home/cell_lib/CBDK_TSMC018_Arm_v4.0/CIC/SynopsysDC/db/slow.db)
+    slow (File: /opt/Design_kit/CBDK_IC_Contest_v2.1/SynopsysDC/db/slow.db)
 
 Number of ports:                           78
-Number of nets:                           961
-Number of cells:                          910
-Number of combinational cells:            788
+Number of nets:                           926
+Number of cells:                          814
+Number of combinational cells:            693
 Number of sequential cells:               120
 Number of macros/black boxes:               0
-Number of buf/inv:                        176
-Number of references:                      47
+Number of buf/inv:                        133
+Number of references:                      58
 
-Combinational area:              13252.377735
-Buf/Inv area:                     1669.852812
-Noncombinational area:            8399.160072
+Combinational area:               6721.703933
+Buf/Inv area:                     1086.336006
+Noncombinational area:            3926.086071
 Macro/Black Box area:                0.000000
-Net Interconnect area:          119140.598236
+Net Interconnect area:          110460.558014
 
-Total cell area:                 21651.537807
-Total area:                     140792.136044
+Total cell area:                 10647.790004
+Total area:                     121108.348018
 1
