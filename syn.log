@@ -33,16 +33,19 @@ Detecting input file type automatically (-rtl or -netlist).
 Reading with Presto HDL Compiler (equivalent to -rtl option).
 Running PRESTO HDLC
 Compiling source file /home/t111368148/Desktop/2016_LBP/LBP.v
-Warning:  /home/t111368148/Desktop/2016_LBP/LBP.v:155: signed to unsigned assignment occurs. (VER-318)
-Warning:  /home/t111368148/Desktop/2016_LBP/LBP.v:156: signed to unsigned assignment occurs. (VER-318)
-Warning:  /home/t111368148/Desktop/2016_LBP/LBP.v:157: signed to unsigned assignment occurs. (VER-318)
-Warning:  /home/t111368148/Desktop/2016_LBP/LBP.v:158: signed to unsigned assignment occurs. (VER-318)
-Warning:  /home/t111368148/Desktop/2016_LBP/LBP.v:159: signed to unsigned assignment occurs. (VER-318)
-Warning:  /home/t111368148/Desktop/2016_LBP/LBP.v:160: signed to unsigned assignment occurs. (VER-318)
-Warning:  /home/t111368148/Desktop/2016_LBP/LBP.v:161: signed to unsigned assignment occurs. (VER-318)
-Warning:  /home/t111368148/Desktop/2016_LBP/LBP.v:162: signed to unsigned assignment occurs. (VER-318)
-Warning:  /home/t111368148/Desktop/2016_LBP/LBP.v:251: signed to unsigned assignment occurs. (VER-318)
-Warning:  /home/t111368148/Desktop/2016_LBP/LBP.v:253: signed to unsigned assignment occurs. (VER-318)
+Warning:  /home/t111368148/Desktop/2016_LBP/LBP.v:96: signed to unsigned conversion occurs. (VER-318)
+Warning:  /home/t111368148/Desktop/2016_LBP/LBP.v:119: signed to unsigned conversion occurs. (VER-318)
+Warning:  /home/t111368148/Desktop/2016_LBP/LBP.v:131: signed to unsigned assignment occurs. (VER-318)
+Warning:  /home/t111368148/Desktop/2016_LBP/LBP.v:132: signed to unsigned assignment occurs. (VER-318)
+Warning:  /home/t111368148/Desktop/2016_LBP/LBP.v:133: signed to unsigned assignment occurs. (VER-318)
+Warning:  /home/t111368148/Desktop/2016_LBP/LBP.v:134: signed to unsigned assignment occurs. (VER-318)
+Warning:  /home/t111368148/Desktop/2016_LBP/LBP.v:135: signed to unsigned assignment occurs. (VER-318)
+Warning:  /home/t111368148/Desktop/2016_LBP/LBP.v:136: signed to unsigned assignment occurs. (VER-318)
+Warning:  /home/t111368148/Desktop/2016_LBP/LBP.v:137: signed to unsigned assignment occurs. (VER-318)
+Warning:  /home/t111368148/Desktop/2016_LBP/LBP.v:138: signed to unsigned assignment occurs. (VER-318)
+Warning:  /home/t111368148/Desktop/2016_LBP/LBP.v:191: signed to unsigned assignment occurs. (VER-318)
+Warning:  /home/t111368148/Desktop/2016_LBP/LBP.v:192: signed to unsigned assignment occurs. (VER-318)
+Warning:  /home/t111368148/Desktop/2016_LBP/LBP.v:194: signed to unsigned assignment occurs. (VER-318)
 
 Statistics for case statements in always block at line 39 in file
 	'/home/t111368148/Desktop/2016_LBP/LBP.v'
@@ -65,32 +68,31 @@ Statistics for case statements in always block at line 68 in file
 ===============================================
 |           Line           |  full/ parallel  |
 ===============================================
-|            75            |    auto/auto     |
-|            89            |     no/auto      |
+|            74            |    auto/auto     |
 ===============================================
 
-Statistics for case statements in always block at line 101 in file
+Statistics for case statements in always block at line 92 in file
 	'/home/t111368148/Desktop/2016_LBP/LBP.v'
 ===============================================
 |           Line           |  full/ parallel  |
 ===============================================
-|           112            |    auto/auto     |
+|           103            |    auto/auto     |
 ===============================================
 
-Statistics for case statements in always block at line 226 in file
+Statistics for case statements in always block at line 168 in file
 	'/home/t111368148/Desktop/2016_LBP/LBP.v'
 ===============================================
 |           Line           |  full/ parallel  |
 ===============================================
-|           227            |    auto/auto     |
+|           169            |    auto/auto     |
 ===============================================
 
-Statistics for case statements in always block at line 241 in file
+Statistics for case statements in always block at line 183 in file
 	'/home/t111368148/Desktop/2016_LBP/LBP.v'
 ===============================================
 |           Line           |  full/ parallel  |
 ===============================================
-|           242            |    auto/auto     |
+|           184            |    auto/auto     |
 ===============================================
 
 Inferred memory devices in process
@@ -121,7 +123,7 @@ Inferred memory devices in process
 ===============================================================================
 
 Inferred memory devices in process
-	in routine LBP line 101 in file
+	in routine LBP line 92 in file
 		'/home/t111368148/Desktop/2016_LBP/LBP.v'.
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
@@ -130,7 +132,7 @@ Inferred memory devices in process
 ===============================================================================
 
 Inferred memory devices in process
-	in routine LBP line 194 in file
+	in routine LBP line 146 in file
 		'/home/t111368148/Desktop/2016_LBP/LBP.v'.
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
@@ -139,7 +141,7 @@ Inferred memory devices in process
 ===============================================================================
 
 Inferred memory devices in process
-	in routine LBP line 219 in file
+	in routine LBP line 161 in file
 		'/home/t111368148/Desktop/2016_LBP/LBP.v'.
 ===============================================================================
 |    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
@@ -199,7 +201,7 @@ check_design
 ****************************************
 check_design summary:
 Version:     Q-2019.12
-Date:        Sat Jul 15 15:22:28 2023
+Date:        Sat Jul 15 21:14:45 2023
 ****************************************
 
                    Name                                            Total
@@ -208,22 +210,22 @@ Cells                                                              16
     Cells do not drive (LINT-1)                                    16
 --------------------------------------------------------------------------------
 
-Warning: In design 'LBP', cell 'C2023' does not drive any nets. (LINT-1)
-Warning: In design 'LBP', cell 'C2037' does not drive any nets. (LINT-1)
-Warning: In design 'LBP', cell 'C2038' does not drive any nets. (LINT-1)
-Warning: In design 'LBP', cell 'C2084' does not drive any nets. (LINT-1)
-Warning: In design 'LBP', cell 'C2085' does not drive any nets. (LINT-1)
-Warning: In design 'LBP', cell 'C2086' does not drive any nets. (LINT-1)
-Warning: In design 'LBP', cell 'C2087' does not drive any nets. (LINT-1)
-Warning: In design 'LBP', cell 'C2088' does not drive any nets. (LINT-1)
-Warning: In design 'LBP', cell 'C2089' does not drive any nets. (LINT-1)
-Warning: In design 'LBP', cell 'C2090' does not drive any nets. (LINT-1)
-Warning: In design 'LBP', cell 'C2091' does not drive any nets. (LINT-1)
-Warning: In design 'LBP', cell 'C2104' does not drive any nets. (LINT-1)
-Warning: In design 'LBP', cell 'C2105' does not drive any nets. (LINT-1)
-Warning: In design 'LBP', cell 'C2106' does not drive any nets. (LINT-1)
+Warning: In design 'LBP', cell 'C2000' does not drive any nets. (LINT-1)
+Warning: In design 'LBP', cell 'C2014' does not drive any nets. (LINT-1)
+Warning: In design 'LBP', cell 'C2015' does not drive any nets. (LINT-1)
+Warning: In design 'LBP', cell 'C2063' does not drive any nets. (LINT-1)
+Warning: In design 'LBP', cell 'C2064' does not drive any nets. (LINT-1)
+Warning: In design 'LBP', cell 'C2068' does not drive any nets. (LINT-1)
+Warning: In design 'LBP', cell 'C2069' does not drive any nets. (LINT-1)
+Warning: In design 'LBP', cell 'C2070' does not drive any nets. (LINT-1)
+Warning: In design 'LBP', cell 'C2071' does not drive any nets. (LINT-1)
+Warning: In design 'LBP', cell 'C2072' does not drive any nets. (LINT-1)
+Warning: In design 'LBP', cell 'C2073' does not drive any nets. (LINT-1)
+Warning: In design 'LBP', cell 'C2074' does not drive any nets. (LINT-1)
+Warning: In design 'LBP', cell 'C2075' does not drive any nets. (LINT-1)
+Warning: In design 'LBP', cell 'C2115' does not drive any nets. (LINT-1)
+Warning: In design 'LBP', cell 'C2145' does not drive any nets. (LINT-1)
 Warning: In design 'LBP', cell 'C2150' does not drive any nets. (LINT-1)
-Warning: In design 'LBP', cell 'B_60' does not drive any nets. (LINT-1)
 1
 set high_fanout_net_threshold 0
 0
@@ -274,8 +276,8 @@ Information: Updating design information... (UID-85)
   Processing 'LBP_DW01_add_5'
   Processing 'LBP_DW01_add_6'
   Processing 'LBP_DW01_add_7'
-  Processing 'LBP_DW01_inc_0_DW01_inc_1'
   Processing 'LBP_DW01_add_8'
+  Processing 'LBP_DW01_inc_0_DW01_inc_1'
 
   Beginning Mapping Optimizations  (High effort)
   -------------------------------
@@ -284,28 +286,28 @@ Information: Updating design information... (UID-85)
    ELAPSED            WORST NEG   SETUP    DESIGN                            
     TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
   --------- --------- --------- --------- --------- -------------------------
-    0:00:03   15549.9      0.00       0.0     157.8                          
-    0:00:03   15549.9      0.00       0.0     157.8                          
-    0:00:03   15549.9      0.00       0.0     157.8                          
-    0:00:03   15549.9      0.00       0.0     157.8                          
-    0:00:03   15549.9      0.00       0.0     157.8                          
-    0:00:04   10756.4      0.42       1.2     157.7                          
-    0:00:04   10749.6      0.15       0.1     148.0                          
-    0:00:04   10761.5      0.00       0.0     138.2                          
-    0:00:04   10761.5      0.00       0.0     138.2                          
-    0:00:04   10761.5      0.00       0.0     138.2                          
-    0:00:04   10761.5      0.00       0.0     138.2                          
-    0:00:04   10761.5      0.00       0.0     138.2                          
-    0:00:04   10787.0      0.00       0.0      61.7                          
-    0:00:04   10807.3      0.00       0.0      48.7                          
-    0:00:04   10817.5      0.00       0.0      38.6                          
-    0:00:04   10827.7      0.00       0.0      28.5                          
-    0:00:04   10837.9      0.00       0.0      18.4                          
-    0:00:04   10844.7      0.00       0.0       8.8                          
-    0:00:04   10846.4      0.00       0.0       8.8                          
-    0:00:04   10846.4      0.00       0.0       8.8                          
-    0:00:04   10846.4      0.00       0.0       8.8                          
-    0:00:04   10846.4      0.00       0.0       8.8                          
+    0:00:03   15619.5      0.00      -0.0     148.5                          
+    0:00:03   15619.5      0.00      -0.0     148.5                          
+    0:00:03   15619.5      0.00      -0.0     148.5                          
+    0:00:03   15619.5      0.00      -0.0     148.5                          
+    0:00:04   15619.5      0.00      -0.0     148.5                          
+    0:00:04   10832.8      0.34       1.4     148.2                          
+    0:00:04   10829.4      0.00      -0.0     138.6                          
+    0:00:04   10829.4      0.01       0.0     138.6                          
+    0:00:04   10858.3      0.00      -0.0     128.9                          
+    0:00:04   10858.3      0.00      -0.0     128.9                          
+    0:00:04   10858.3      0.00      -0.0     128.9                          
+    0:00:04   10858.3      0.00      -0.0     128.9                          
+    0:00:04   10882.0      0.01       0.0      53.2                          
+    0:00:04   10909.2      0.01       0.0      40.4                          
+    0:00:04   10919.4      0.01       0.0      30.3                          
+    0:00:04   10929.6      0.00      -0.0      20.2                          
+    0:00:04   10939.7      0.00      -0.0      10.1                          
+    0:00:04   10949.9      0.00      -0.0       0.0                          
+    0:00:04   10951.6      0.00      -0.0       0.0                          
+    0:00:04   10951.6      0.00      -0.0       0.0                          
+    0:00:04   10951.6      0.00      -0.0       0.0                          
+    0:00:04   10951.6      0.00      -0.0       0.0                          
 
 
 
@@ -316,9 +318,9 @@ Information: Updating design information... (UID-85)
    ELAPSED            WORST NEG   SETUP    DESIGN                            
     TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
   --------- --------- --------- --------- --------- -------------------------
-    0:00:04   10846.4      0.00       0.0       8.8                          
-    0:00:04   10846.4      0.00       0.0       8.8                          
-    0:00:05   10688.5      0.00       0.0      24.8                          
+    0:00:04   10951.6      0.00      -0.0       0.0                          
+    0:00:04   10951.6      0.00      -0.0       0.0                          
+    0:00:05   10585.0      0.00      -0.0     211.9                          
 
 
   Beginning Design Rule Fixing  (max_transition)  (max_capacitance)
@@ -328,8 +330,8 @@ Information: Updating design information... (UID-85)
    ELAPSED            WORST NEG   SETUP    DESIGN                            
     TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
   --------- --------- --------- --------- --------- -------------------------
-    0:00:05   10688.5      0.00       0.0      24.8                          
-    0:00:05   10768.3      0.00       0.0       0.0                          
+    0:00:05   10585.0      0.00      -0.0     211.9                          
+    0:00:05   10892.2      0.00      -0.0       0.0                          
 
 
   Beginning Area-Recovery Phase  (cleanup)
@@ -339,21 +341,22 @@ Information: Updating design information... (UID-85)
    ELAPSED            WORST NEG   SETUP    DESIGN                            
     TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
   --------- --------- --------- --------- --------- -------------------------
-    0:00:05   10768.3      0.00       0.0       0.0                          
-    0:00:05   10768.3      0.00       0.0       0.0                          
-    0:00:05   10725.9      0.00       0.0       0.0                          
-    0:00:05   10700.4      0.00       0.0       0.0                          
-    0:00:05   10680.0      0.00       0.0       0.0                          
-    0:00:05   10664.8      0.00       0.0       0.0                          
-    0:00:05   10647.8      0.00       0.0       0.0                          
-    0:00:05   10647.8      0.00       0.0       0.0                          
-    0:00:05   10647.8      0.00       0.0       0.0                          
-    0:00:05   10647.8      0.00       0.0       0.0                          
-    0:00:05   10647.8      0.00       0.0       0.0                          
-    0:00:05   10647.8      0.00       0.0       0.0                          
-    0:00:05   10647.8      0.00       0.0       0.0                          
-    0:00:05   10647.8      0.00       0.0       0.0                          
-    0:00:05   10647.8      0.00       0.0       0.0                          
+    0:00:05   10892.2      0.00      -0.0       0.0                          
+    0:00:05   10892.2      0.00      -0.0       0.0                          
+    0:00:05   10751.3      0.00      -0.0       0.0                          
+    0:00:05   10731.0      0.00      -0.0       0.0                          
+    0:00:05   10710.6      0.00      -0.0       0.0                          
+    0:00:05   10697.0      0.00      -0.0       0.0                          
+    0:00:05   10681.7      0.00      -0.0       0.0                          
+    0:00:05   10681.7      0.00      -0.0       0.0                          
+    0:00:05   10681.7      0.00      -0.0       0.0                          
+    0:00:05   10659.7      0.00      -0.0       0.0                          
+    0:00:05   10659.7      0.00      -0.0       0.0                          
+    0:00:05   10659.7      0.00      -0.0       0.0                          
+    0:00:05   10659.7      0.00      -0.0       0.0                          
+    0:00:05   10659.7      0.00      -0.0       0.0                          
+    0:00:05   10659.7      0.00      -0.0       0.0                          
+    0:00:05   10659.7      0.00      -0.0       0.0                          
 Loading db file '/opt/Design_kit/CBDK_IC_Contest_v2.1/SynopsysDC/db/slow.db'
 
 

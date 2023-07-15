@@ -25,7 +25,7 @@ marker 0.000000
 ; visible top row signal index
 top 0
 ; marker line index
-markerPos 7
+markerPos 9
 
 ; event list
 ; addEvent event_name event_expression
@@ -54,6 +54,8 @@ addSignal -h 15 -holdScope nx_state[1:0]
 addSignal -h 15 -holdScope gray_ready
 addSignal -h 15 -holdScope gray_req
 addSignal -h 15 -holdScope pt[13:0]
+addSignal -h 15 -holdScope i[31:0]
+addSignal -h 15 -holdScope mod[7:0]
 addSignal -h 15 -holdScope gray_addr[13:0]
 addSignal -h 15 -holdScope gray_data[7:0]
 addSignal -h 15 -holdScope count[3:0]
