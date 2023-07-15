@@ -1,4 +1,0 @@
-1689431732 /home/t111368148/Desktop/2016_LBP/LBP.v
-1689405119 /home/t111368148/Desktop/2016_LBP/testfixture.v
-1689431883 /home/t111368148/Desktop/2016_LBP/LBP_syn.v
-1689405034 /home/t111368148/Desktop/2016_LBP/tsmc13_neg.v
