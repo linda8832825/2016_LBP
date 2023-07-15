@@ -204,6 +204,7 @@ Orientation = Landscape
 nWaveOpenFsdbDirHistory = "\"/home/t111368148/Desktop/2016_LBP/LBP.fsdb\"" "\"/home/t111368148/Desktop/2016_LBP/signal.rc\""
 [Form]
 version = Verdi_Q-2020.03
+openfile.fm = 100,100,723,532
 wave/unknownSave.fm = 100,100,520,275
 [General]
 autoSaveSession = FALSE
@@ -328,11 +329,11 @@ PaperSize = A4 - 210x297 (mm)
 ColorPrint = FALSE
 [QtDialog]
 QwWarnMsgDlg = 2570,375,600,250
-openFileDlg = 659,286,602,483
 SetWindowTimeUnitDialog = 743,484,433,86
-qWaveSignalDialog = 560,288,800,479
-QwUserAskDlg = 2708,405,324,148
 saveSigDlg = 684,334,551,386
+QwUserAskDlg = 2708,405,324,128
+openFileDlg = 667,294,602,483
+qWaveSignalDialog = 560,288,800,479
 [Session Cache]
 1 = string (session file name)
 2 = string (session file name)
@@ -547,7 +548,7 @@ scope_to_save_with_macro
 open_file_dir
 open_rc_file_dir
 getSignalForm = 560 288 800 479 164 381 390 89
-viewPort = 33 188 897 202 214 77
+viewPort = 0 23 1920 1009 214 77
 signalSpacing = 5
 digitalSignalHeight = 15
 analogSignalHeight = 98
@@ -820,8 +821,8 @@ curveWindow_Drag&Drop_Mode = TRUE
 hspiceIncOpenMode = TRUE
 pcSelectMode = TRUE
 hierarchyDelimiter = /
-RecentFile1 = "\"/home/t111368148/Desktop/2016_LBP/signal.rc\""
-RecentFile2 = "\"/home/t111368148/Desktop/2016_LBP/LBP.fsdb\""
+RecentFile1 = "\"/home/t111368148/Desktop/2016_LBP/LBP.fsdb\""
+RecentFile2 = "\"/home/t111368148/Desktop/2016_LBP/signal.rc\""
 open_file_time_range = FALSE
 value_window_aligment = Right
 signal_window_alignment = Auto

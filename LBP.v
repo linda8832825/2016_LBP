@@ -39,7 +39,7 @@ assign mod = pt % 8'd128;
 always@(posedge clk or posedge reset)begin
     if(reset) count <= 4'd0;
     else begin
-        case(cur_state)
+        case(nx_state)
             STATE_IDLE: count <= 0;
             STATE_RD:   count <= count+1;
             STATE_SD:   count <= 0;
@@ -168,7 +168,10 @@ end
 always@(*)begin
     case(cur_state)
         STATE_IDLE: nx_state <= (gray_ready) ? STATE_RD : STATE_IDLE;
-        STATE_RD:   nx_state <= (gray_req) ? STATE_RD : STATE_SD;
+        STATE_RD:   begin
+            nx_state <= (((mod == 8'd0) && (count == 4'd9)) || ((mod != 8'd0) && (count == 4'd3))) ? STATE_SD : STATE_RD;
+            // nx_state <= (gray_req) ? STATE_RD : STATE_SD;
+        end
         STATE_SD:   nx_state <= STATE_RD;
         default:    nx_state <= STATE_IDLE;
     endcase
@@ -188,8 +191,9 @@ always @(*) begin
             finish=0;
         end
         STATE_RD:begin
-            if(mod == 8'd0) gray_req = (count > 4'd9) ? 0 : 1;
-            else gray_req = (count > 4'd3) ? 0 : 1;
+            gray_req = (((mod == 8'd0) && (count > 4'd9)) || ((mod != 8'd0) && (count>4'd3))) ? 0 : 1;
+            // if(mod == 8'd0) gray_req = (count > 4'd9) ? 0 : 1;
+            // else gray_req = (count > 4'd3) ? 0 : 1;
             lbp_valid=0;
             finish = (lbp_addr == 14'd16254) ? 1 : 0;
         end

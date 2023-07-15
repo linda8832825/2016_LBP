@@ -1,5 +1,5 @@
 ncverilog: 15.20-s039: (c) Copyright 1995-2017 Cadence Design Systems, Inc.
-TOOL:	ncverilog	15.20-s039: Started on Jul 15, 2023 at 21:16:00 CST
+TOOL:	ncverilog	15.20-s039: Started on Jul 15, 2023 at 22:41:16 CST
 ncverilog
 	testfixture.v
 	LBP_syn.v
@@ -19,325 +19,365 @@ file: LBP_syn.v
 		errors: 0, warnings: 0
 		Caching library 'worklib' ....... Done
 	Elaborating the design hierarchy:
-  DFFRX1 \data_reg[8][7]  ( .D(n372), .CK(clk), .RN(n848), .QN(n136) );
+  DFFRX1 \pt_reg[11]  ( .D(n810), .CK(clk), .RN(n472), .Q(pt[11]) );
+                    |
+ncelab: *W,CUVWSP (./LBP_syn.v,126|20): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pt_reg[12]  ( .D(n809), .CK(clk), .RN(n472), .Q(pt[12]) );
+                    |
+ncelab: *W,CUVWSP (./LBP_syn.v,127|20): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pt_reg[9]  ( .D(n812), .CK(clk), .RN(n472), .Q(pt[9]) );
+                   |
+ncelab: *W,CUVWSP (./LBP_syn.v,129|19): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pt_reg[10]  ( .D(n811), .CK(clk), .RN(n472), .Q(pt[10]) );
+                    |
+ncelab: *W,CUVWSP (./LBP_syn.v,130|20): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \pt_reg[2]  ( .D(n819), .CK(clk), .RN(n471), .Q(n487) );
+                   |
+ncelab: *W,CUVWSP (./LBP_syn.v,133|19): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \cur_state_reg[1]  ( .D(n438), .CK(clk), .RN(n821), .Q(n769) );
+                          |
+ncelab: *W,CUVWSP (./LBP_syn.v,157|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \data_reg[8][7]  ( .D(n367), .CK(clk), .RN(n821), .QN(n136) );
+                        |
+ncelab: *W,CUVWSP (./LBP_syn.v,158|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \data_reg[8][6]  ( .D(n368), .CK(clk), .RN(n821), .QN(n137) );
+                        |
+ncelab: *W,CUVWSP (./LBP_syn.v,159|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \data_reg[8][3]  ( .D(n371), .CK(clk), .RN(n821), .QN(n140) );
+                        |
+ncelab: *W,CUVWSP (./LBP_syn.v,164|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \data_reg[8][2]  ( .D(n372), .CK(clk), .RN(n821), .QN(n141) );
+                        |
+ncelab: *W,CUVWSP (./LBP_syn.v,165|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \data_reg[8][1]  ( .D(n373), .CK(clk), .RN(n821), .QN(n142) );
+                        |
+ncelab: *W,CUVWSP (./LBP_syn.v,166|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \data_reg[8][0]  ( .D(n374), .CK(clk), .RN(n821), .QN(n143) );
+                        |
+ncelab: *W,CUVWSP (./LBP_syn.v,167|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \cur_state_reg[0]  ( .D(n823), .CK(clk), .RN(n821), .QN(n791) );
+                          |
+ncelab: *W,CUVWSP (./LBP_syn.v,168|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \data_reg[7][7]  ( .D(n359), .CK(clk), .RN(n821), .QN(n128) );
+                        |
+ncelab: *W,CUVWSP (./LBP_syn.v,169|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \data_reg[6][7]  ( .D(n351), .CK(clk), .RN(n821), .QN(n800) );
                         |
 ncelab: *W,CUVWSP (./LBP_syn.v,170|24): 1 output port was not connected:
 ncelab: (./tsmc13_neg.v,18307): Q
 
-  DFFRX1 \data_reg[8][6]  ( .D(n373), .CK(clk), .RN(n848), .QN(n137) );
+  DFFRX1 \data_reg[3][7]  ( .D(n327), .CK(clk), .RN(n821), .QN(n792) );
                         |
 ncelab: *W,CUVWSP (./LBP_syn.v,171|24): 1 output port was not connected:
 ncelab: (./tsmc13_neg.v,18307): Q
 
-  DFFRX1 \data_reg[8][3]  ( .D(n376), .CK(clk), .RN(n848), .QN(n140) );
+  DFFRX1 \data_reg[2][7]  ( .D(n319), .CK(clk), .RN(n821), .QN(n104) );
                         |
-ncelab: *W,CUVWSP (./LBP_syn.v,176|24): 1 output port was not connected:
+ncelab: *W,CUVWSP (./LBP_syn.v,172|24): 1 output port was not connected:
 ncelab: (./tsmc13_neg.v,18307): Q
 
-  DFFRX1 \data_reg[8][2]  ( .D(n377), .CK(clk), .RN(n848), .QN(n141) );
+  DFFRX1 \data_reg[1][7]  ( .D(n311), .CK(clk), .RN(n821), .QN(n96) );
                         |
-ncelab: *W,CUVWSP (./LBP_syn.v,177|24): 1 output port was not connected:
+ncelab: *W,CUVWSP (./LBP_syn.v,173|24): 1 output port was not connected:
 ncelab: (./tsmc13_neg.v,18307): Q
 
-  DFFRX1 \data_reg[8][1]  ( .D(n378), .CK(clk), .RN(n848), .QN(n142) );
+  DFFRX1 \data_reg[0][7]  ( .D(n303), .CK(clk), .RN(n821), .QN(n88) );
                         |
-ncelab: *W,CUVWSP (./LBP_syn.v,178|24): 1 output port was not connected:
+ncelab: *W,CUVWSP (./LBP_syn.v,174|24): 1 output port was not connected:
 ncelab: (./tsmc13_neg.v,18307): Q
 
-  DFFRX1 \data_reg[8][0]  ( .D(n379), .CK(clk), .RN(n848), .QN(n143) );
+  DFFRX1 \data_reg[7][6]  ( .D(n360), .CK(clk), .RN(n821), .QN(n129) );
                         |
-ncelab: *W,CUVWSP (./LBP_syn.v,179|24): 1 output port was not connected:
+ncelab: *W,CUVWSP (./LBP_syn.v,175|24): 1 output port was not connected:
 ncelab: (./tsmc13_neg.v,18307): Q
 
-  DFFRX1 \data_reg[7][7]  ( .D(n364), .CK(clk), .RN(n848), .QN(n128) );
+  DFFRX1 \data_reg[7][3]  ( .D(n363), .CK(clk), .RN(n821), .QN(n132) );
                         |
 ncelab: *W,CUVWSP (./LBP_syn.v,180|24): 1 output port was not connected:
 ncelab: (./tsmc13_neg.v,18307): Q
 
-  DFFRX1 \data_reg[3][7]  ( .D(n332), .CK(clk), .RN(n848), .QN(n819) );
+  DFFRX1 \data_reg[7][2]  ( .D(n364), .CK(clk), .RN(n821), .QN(n133) );
                         |
 ncelab: *W,CUVWSP (./LBP_syn.v,181|24): 1 output port was not connected:
 ncelab: (./tsmc13_neg.v,18307): Q
 
-  DFFRX1 \data_reg[1][7]  ( .D(n316), .CK(clk), .RN(n848), .QN(n96) );
+  DFFRX1 \data_reg[7][1]  ( .D(n365), .CK(clk), .RN(n821), .QN(n134) );
                         |
 ncelab: *W,CUVWSP (./LBP_syn.v,182|24): 1 output port was not connected:
 ncelab: (./tsmc13_neg.v,18307): Q
 
-  DFFRX1 \data_reg[0][7]  ( .D(n308), .CK(clk), .RN(n848), .QN(n88) );
+  DFFRX1 \data_reg[7][0]  ( .D(n366), .CK(clk), .RN(n821), .QN(n135) );
                         |
 ncelab: *W,CUVWSP (./LBP_syn.v,183|24): 1 output port was not connected:
 ncelab: (./tsmc13_neg.v,18307): Q
 
-  DFFRX1 \data_reg[6][7]  ( .D(n356), .CK(clk), .RN(n848), .QN(n827) );
+  DFFRX1 \data_reg[6][6]  ( .D(n352), .CK(clk), .RN(n821), .QN(n806) );
                         |
 ncelab: *W,CUVWSP (./LBP_syn.v,184|24): 1 output port was not connected:
 ncelab: (./tsmc13_neg.v,18307): Q
 
-  DFFRX1 \data_reg[5][7]  ( .D(n348), .CK(clk), .RN(n848), .QN(n120) );
+  DFFRX1 \data_reg[6][3]  ( .D(n355), .CK(clk), .RN(n821), .QN(n802) );
                         |
-ncelab: *W,CUVWSP (./LBP_syn.v,185|24): 1 output port was not connected:
+ncelab: *W,CUVWSP (./LBP_syn.v,189|24): 1 output port was not connected:
 ncelab: (./tsmc13_neg.v,18307): Q
 
-  DFFRX1 \data_reg[2][7]  ( .D(n324), .CK(clk), .RN(n848), .QN(n104) );
+  DFFRX1 \data_reg[6][2]  ( .D(n356), .CK(clk), .RN(n821), .QN(n805) );
                         |
-ncelab: *W,CUVWSP (./LBP_syn.v,186|24): 1 output port was not connected:
+ncelab: *W,CUVWSP (./LBP_syn.v,190|24): 1 output port was not connected:
 ncelab: (./tsmc13_neg.v,18307): Q
 
-  DFFRX1 \data_reg[7][6]  ( .D(n365), .CK(clk), .RN(n848), .QN(n129) );
+  DFFRX1 \data_reg[6][1]  ( .D(n357), .CK(clk), .RN(n821), .QN(n803) );
                         |
-ncelab: *W,CUVWSP (./LBP_syn.v,187|24): 1 output port was not connected:
+ncelab: *W,CUVWSP (./LBP_syn.v,191|24): 1 output port was not connected:
 ncelab: (./tsmc13_neg.v,18307): Q
 
-  DFFRX1 \data_reg[7][3]  ( .D(n368), .CK(clk), .RN(n848), .QN(n132) );
+  DFFRX1 \data_reg[6][0]  ( .D(n358), .CK(clk), .RN(n821), .QN(n804) );
                         |
 ncelab: *W,CUVWSP (./LBP_syn.v,192|24): 1 output port was not connected:
 ncelab: (./tsmc13_neg.v,18307): Q
 
-  DFFRX1 \data_reg[7][2]  ( .D(n369), .CK(clk), .RN(n848), .QN(n133) );
+  DFFRX1 \data_reg[4][5]  ( .D(n337), .CK(clk), .RN(n821), .QN(n114) );
                         |
 ncelab: *W,CUVWSP (./LBP_syn.v,193|24): 1 output port was not connected:
 ncelab: (./tsmc13_neg.v,18307): Q
 
-  DFFRX1 \data_reg[7][1]  ( .D(n370), .CK(clk), .RN(n848), .QN(n134) );
+  DFFRX1 \data_reg[4][4]  ( .D(n338), .CK(clk), .RN(n821), .QN(n115) );
                         |
 ncelab: *W,CUVWSP (./LBP_syn.v,194|24): 1 output port was not connected:
 ncelab: (./tsmc13_neg.v,18307): Q
 
-  DFFRX1 \data_reg[7][0]  ( .D(n371), .CK(clk), .RN(n848), .QN(n135) );
+  DFFRX1 \data_reg[4][2]  ( .D(n340), .CK(clk), .RN(n821), .QN(n117) );
                         |
 ncelab: *W,CUVWSP (./LBP_syn.v,195|24): 1 output port was not connected:
 ncelab: (./tsmc13_neg.v,18307): Q
 
-  DFFRX1 \data_reg[4][5]  ( .D(n342), .CK(clk), .RN(n848), .QN(n114) );
+  DFFRX1 \data_reg[4][0]  ( .D(n342), .CK(clk), .RN(n821), .QN(n119) );
                         |
 ncelab: *W,CUVWSP (./LBP_syn.v,196|24): 1 output port was not connected:
 ncelab: (./tsmc13_neg.v,18307): Q
 
-  DFFRX1 \data_reg[4][4]  ( .D(n343), .CK(clk), .RN(n848), .QN(n115) );
+  DFFRX1 \data_reg[3][6]  ( .D(n328), .CK(clk), .RN(n821), .QN(n798) );
                         |
 ncelab: *W,CUVWSP (./LBP_syn.v,197|24): 1 output port was not connected:
 ncelab: (./tsmc13_neg.v,18307): Q
 
-  DFFRX1 \data_reg[4][2]  ( .D(n345), .CK(clk), .RN(n848), .QN(n117) );
+  DFFRX1 \data_reg[3][3]  ( .D(n331), .CK(clk), .RN(n821), .QN(n794) );
                         |
-ncelab: *W,CUVWSP (./LBP_syn.v,198|24): 1 output port was not connected:
+ncelab: *W,CUVWSP (./LBP_syn.v,202|24): 1 output port was not connected:
 ncelab: (./tsmc13_neg.v,18307): Q
 
-  DFFRX1 \data_reg[4][0]  ( .D(n347), .CK(clk), .RN(n848), .QN(n119) );
+  DFFRX1 \data_reg[3][2]  ( .D(n332), .CK(clk), .RN(n821), .QN(n797) );
                         |
-ncelab: *W,CUVWSP (./LBP_syn.v,199|24): 1 output port was not connected:
+ncelab: *W,CUVWSP (./LBP_syn.v,203|24): 1 output port was not connected:
 ncelab: (./tsmc13_neg.v,18307): Q
 
-  DFFRX1 \data_reg[3][6]  ( .D(n333), .CK(clk), .RN(n848), .QN(n825) );
+  DFFRX1 \data_reg[3][1]  ( .D(n333), .CK(clk), .RN(n821), .QN(n795) );
                         |
-ncelab: *W,CUVWSP (./LBP_syn.v,200|24): 1 output port was not connected:
+ncelab: *W,CUVWSP (./LBP_syn.v,204|24): 1 output port was not connected:
 ncelab: (./tsmc13_neg.v,18307): Q
 
-  DFFRX1 \data_reg[3][3]  ( .D(n336), .CK(clk), .RN(n848), .QN(n821) );
+  DFFRX1 \data_reg[3][0]  ( .D(n334), .CK(clk), .RN(n821), .QN(n796) );
                         |
 ncelab: *W,CUVWSP (./LBP_syn.v,205|24): 1 output port was not connected:
 ncelab: (./tsmc13_neg.v,18307): Q
 
-  DFFRX1 \data_reg[3][2]  ( .D(n337), .CK(clk), .RN(n848), .QN(n824) );
+  DFFRX1 \data_reg[2][6]  ( .D(n320), .CK(clk), .RN(n821), .QN(n105) );
                         |
 ncelab: *W,CUVWSP (./LBP_syn.v,206|24): 1 output port was not connected:
 ncelab: (./tsmc13_neg.v,18307): Q
 
-  DFFRX1 \data_reg[3][1]  ( .D(n338), .CK(clk), .RN(n848), .QN(n822) );
+  DFFRX1 \data_reg[2][3]  ( .D(n323), .CK(clk), .RN(n821), .QN(n108) );
                         |
-ncelab: *W,CUVWSP (./LBP_syn.v,207|24): 1 output port was not connected:
+ncelab: *W,CUVWSP (./LBP_syn.v,211|24): 1 output port was not connected:
 ncelab: (./tsmc13_neg.v,18307): Q
 
-  DFFRX1 \data_reg[3][0]  ( .D(n339), .CK(clk), .RN(n848), .QN(n823) );
+  DFFRX1 \data_reg[2][2]  ( .D(n324), .CK(clk), .RN(n821), .QN(n109) );
                         |
-ncelab: *W,CUVWSP (./LBP_syn.v,208|24): 1 output port was not connected:
+ncelab: *W,CUVWSP (./LBP_syn.v,212|24): 1 output port was not connected:
 ncelab: (./tsmc13_neg.v,18307): Q
 
-  DFFRX1 \data_reg[1][6]  ( .D(n317), .CK(clk), .RN(n848), .QN(n97) );
-                        |
-ncelab: *W,CUVWSP (./LBP_syn.v,209|24): 1 output port was not connected:
-ncelab: (./tsmc13_neg.v,18307): Q
-
-  DFFRX1 \data_reg[1][3]  ( .D(n320), .CK(clk), .RN(n848), .QN(n100) );
-                        |
-ncelab: *W,CUVWSP (./LBP_syn.v,214|24): 1 output port was not connected:
-ncelab: (./tsmc13_neg.v,18307): Q
-
-  DFFRX1 \data_reg[1][2]  ( .D(n321), .CK(clk), .RN(n848), .QN(n101) );
+  DFFRX1 \data_reg[2][0]  ( .D(n326), .CK(clk), .RN(n821), .QN(n111) );
                         |
 ncelab: *W,CUVWSP (./LBP_syn.v,215|24): 1 output port was not connected:
 ncelab: (./tsmc13_neg.v,18307): Q
 
-  DFFRX1 \data_reg[1][0]  ( .D(n323), .CK(clk), .RN(n848), .QN(n103) );
+  DFFRX1 \data_reg[1][6]  ( .D(n312), .CK(clk), .RN(n821), .QN(n97) );
                         |
-ncelab: *W,CUVWSP (./LBP_syn.v,218|24): 1 output port was not connected:
+ncelab: *W,CUVWSP (./LBP_syn.v,216|24): 1 output port was not connected:
 ncelab: (./tsmc13_neg.v,18307): Q
 
-  DFFRX1 \data_reg[6][6]  ( .D(n357), .CK(clk), .RN(n848), .QN(n833) );
+  DFFRX1 \data_reg[1][3]  ( .D(n315), .CK(clk), .RN(n821), .QN(n100) );
                         |
-ncelab: *W,CUVWSP (./LBP_syn.v,219|24): 1 output port was not connected:
+ncelab: *W,CUVWSP (./LBP_syn.v,221|24): 1 output port was not connected:
 ncelab: (./tsmc13_neg.v,18307): Q
 
-  DFFRX1 \data_reg[6][3]  ( .D(n360), .CK(clk), .RN(n848), .QN(n829) );
+  DFFRX1 \data_reg[1][2]  ( .D(n316), .CK(clk), .RN(n821), .QN(n101) );
                         |
-ncelab: *W,CUVWSP (./LBP_syn.v,224|24): 1 output port was not connected:
+ncelab: *W,CUVWSP (./LBP_syn.v,222|24): 1 output port was not connected:
 ncelab: (./tsmc13_neg.v,18307): Q
 
-  DFFRX1 \data_reg[6][2]  ( .D(n361), .CK(clk), .RN(n848), .QN(n832) );
+  DFFRX1 \data_reg[1][0]  ( .D(n318), .CK(clk), .RN(n821), .QN(n103) );
                         |
 ncelab: *W,CUVWSP (./LBP_syn.v,225|24): 1 output port was not connected:
 ncelab: (./tsmc13_neg.v,18307): Q
 
-  DFFRX1 \data_reg[6][1]  ( .D(n362), .CK(clk), .RN(n848), .QN(n830) );
+  DFFRX1 \data_reg[5][7]  ( .D(n343), .CK(clk), .RN(n821), .QN(n120) );
                         |
 ncelab: *W,CUVWSP (./LBP_syn.v,226|24): 1 output port was not connected:
 ncelab: (./tsmc13_neg.v,18307): Q
 
-  DFFRX1 \data_reg[6][0]  ( .D(n363), .CK(clk), .RN(n848), .QN(n831) );
+  DFFRX1 \data_reg[5][6]  ( .D(n344), .CK(clk), .RN(n821), .QN(n121) );
                         |
 ncelab: *W,CUVWSP (./LBP_syn.v,227|24): 1 output port was not connected:
 ncelab: (./tsmc13_neg.v,18307): Q
 
-  DFFRX1 \data_reg[5][6]  ( .D(n349), .CK(clk), .RN(n848), .QN(n121) );
+  DFFRX1 \data_reg[5][3]  ( .D(n347), .CK(clk), .RN(n821), .QN(n124) );
                         |
-ncelab: *W,CUVWSP (./LBP_syn.v,228|24): 1 output port was not connected:
+ncelab: *W,CUVWSP (./LBP_syn.v,232|24): 1 output port was not connected:
 ncelab: (./tsmc13_neg.v,18307): Q
 
-  DFFRX1 \data_reg[5][3]  ( .D(n352), .CK(clk), .RN(n848), .QN(n124) );
+  DFFRX1 \data_reg[5][2]  ( .D(n348), .CK(clk), .RN(n821), .QN(n125) );
                         |
 ncelab: *W,CUVWSP (./LBP_syn.v,233|24): 1 output port was not connected:
 ncelab: (./tsmc13_neg.v,18307): Q
 
-  DFFRX1 \data_reg[5][2]  ( .D(n353), .CK(clk), .RN(n848), .QN(n125) );
+  DFFRX1 \data_reg[5][1]  ( .D(n349), .CK(clk), .RN(n821), .QN(n126) );
                         |
 ncelab: *W,CUVWSP (./LBP_syn.v,234|24): 1 output port was not connected:
 ncelab: (./tsmc13_neg.v,18307): Q
 
-  DFFRX1 \data_reg[5][1]  ( .D(n354), .CK(clk), .RN(n848), .QN(n126) );
+  DFFRX1 \data_reg[5][0]  ( .D(n350), .CK(clk), .RN(n821), .QN(n127) );
                         |
 ncelab: *W,CUVWSP (./LBP_syn.v,235|24): 1 output port was not connected:
 ncelab: (./tsmc13_neg.v,18307): Q
 
-  DFFRX1 \data_reg[5][0]  ( .D(n355), .CK(clk), .RN(n848), .QN(n127) );
+  DFFRX1 \data_reg[0][6]  ( .D(n304), .CK(clk), .RN(n821), .QN(n89) );
                         |
 ncelab: *W,CUVWSP (./LBP_syn.v,236|24): 1 output port was not connected:
 ncelab: (./tsmc13_neg.v,18307): Q
 
-  DFFRX1 \data_reg[2][6]  ( .D(n325), .CK(clk), .RN(n848), .QN(n105) );
+  DFFRX1 \data_reg[0][3]  ( .D(n307), .CK(clk), .RN(n821), .QN(n92) );
                         |
-ncelab: *W,CUVWSP (./LBP_syn.v,237|24): 1 output port was not connected:
+ncelab: *W,CUVWSP (./LBP_syn.v,241|24): 1 output port was not connected:
 ncelab: (./tsmc13_neg.v,18307): Q
 
-  DFFRX1 \data_reg[2][3]  ( .D(n328), .CK(clk), .RN(n848), .QN(n108) );
+  DFFRX1 \data_reg[0][2]  ( .D(n308), .CK(clk), .RN(n821), .QN(n93) );
                         |
 ncelab: *W,CUVWSP (./LBP_syn.v,242|24): 1 output port was not connected:
 ncelab: (./tsmc13_neg.v,18307): Q
 
-  DFFRX1 \data_reg[2][2]  ( .D(n329), .CK(clk), .RN(n848), .QN(n109) );
+  DFFRX1 \data_reg[0][1]  ( .D(n309), .CK(clk), .RN(n821), .QN(n94) );
                         |
 ncelab: *W,CUVWSP (./LBP_syn.v,243|24): 1 output port was not connected:
 ncelab: (./tsmc13_neg.v,18307): Q
 
-  DFFRX1 \data_reg[2][0]  ( .D(n331), .CK(clk), .RN(n848), .QN(n111) );
+  DFFRX1 \data_reg[0][0]  ( .D(n310), .CK(clk), .RN(n821), .QN(n95) );
                         |
-ncelab: *W,CUVWSP (./LBP_syn.v,246|24): 1 output port was not connected:
+ncelab: *W,CUVWSP (./LBP_syn.v,244|24): 1 output port was not connected:
 ncelab: (./tsmc13_neg.v,18307): Q
 
-  DFFRX1 \data_reg[0][6]  ( .D(n309), .CK(clk), .RN(n848), .QN(n89) );
-                        |
-ncelab: *W,CUVWSP (./LBP_syn.v,247|24): 1 output port was not connected:
-ncelab: (./tsmc13_neg.v,18307): Q
-
-  DFFRX1 \data_reg[0][3]  ( .D(n312), .CK(clk), .RN(n848), .QN(n92) );
-                        |
-ncelab: *W,CUVWSP (./LBP_syn.v,252|24): 1 output port was not connected:
-ncelab: (./tsmc13_neg.v,18307): Q
-
-  DFFRX1 \data_reg[0][2]  ( .D(n313), .CK(clk), .RN(n848), .QN(n93) );
-                        |
-ncelab: *W,CUVWSP (./LBP_syn.v,253|24): 1 output port was not connected:
-ncelab: (./tsmc13_neg.v,18307): Q
-
-  DFFRX1 \data_reg[0][1]  ( .D(n314), .CK(clk), .RN(n848), .QN(n94) );
-                        |
-ncelab: *W,CUVWSP (./LBP_syn.v,254|24): 1 output port was not connected:
-ncelab: (./tsmc13_neg.v,18307): Q
-
-  DFFRX1 \data_reg[0][0]  ( .D(n315), .CK(clk), .RN(n848), .QN(n95) );
-                        |
-ncelab: *W,CUVWSP (./LBP_syn.v,255|24): 1 output port was not connected:
-ncelab: (./tsmc13_neg.v,18307): Q
-
-  DFFRX1 \gray_addr_reg[13]  ( .D(N411), .CK(clk), .RN(n848), .QN(n406) );
+  DFFRX1 \gray_addr_reg[13]  ( .D(N405), .CK(clk), .RN(n821), .QN(n390) );
                            |
-ncelab: *W,CUVWSP (./LBP_syn.v,256|27): 1 output port was not connected:
+ncelab: *W,CUVWSP (./LBP_syn.v,247|27): 1 output port was not connected:
 ncelab: (./tsmc13_neg.v,18307): Q
 
-  DFFRX1 \gray_addr_reg[12]  ( .D(N410), .CK(clk), .RN(n848), .QN(n405) );
+  DFFRX1 \gray_addr_reg[12]  ( .D(N404), .CK(clk), .RN(n821), .QN(n389) );
                            |
-ncelab: *W,CUVWSP (./LBP_syn.v,257|27): 1 output port was not connected:
+ncelab: *W,CUVWSP (./LBP_syn.v,248|27): 1 output port was not connected:
 ncelab: (./tsmc13_neg.v,18307): Q
 
-  DFFRX1 \gray_addr_reg[11]  ( .D(N409), .CK(clk), .RN(n848), .QN(n404) );
+  DFFRX1 \gray_addr_reg[11]  ( .D(N403), .CK(clk), .RN(n821), .QN(n388) );
                            |
-ncelab: *W,CUVWSP (./LBP_syn.v,258|27): 1 output port was not connected:
+ncelab: *W,CUVWSP (./LBP_syn.v,249|27): 1 output port was not connected:
 ncelab: (./tsmc13_neg.v,18307): Q
 
-  DFFRX1 \gray_addr_reg[10]  ( .D(N408), .CK(clk), .RN(n848), .QN(n403) );
+  DFFRX1 \gray_addr_reg[10]  ( .D(N402), .CK(clk), .RN(n821), .QN(n387) );
                            |
-ncelab: *W,CUVWSP (./LBP_syn.v,259|27): 1 output port was not connected:
+ncelab: *W,CUVWSP (./LBP_syn.v,250|27): 1 output port was not connected:
 ncelab: (./tsmc13_neg.v,18307): Q
 
-  DFFRX1 \gray_addr_reg[9]  ( .D(N407), .CK(clk), .RN(n848), .QN(n402) );
+  DFFRX1 \gray_addr_reg[9]  ( .D(N401), .CK(clk), .RN(n821), .QN(n386) );
+                          |
+ncelab: *W,CUVWSP (./LBP_syn.v,251|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \gray_addr_reg[8]  ( .D(N400), .CK(clk), .RN(n821), .QN(n385) );
+                          |
+ncelab: *W,CUVWSP (./LBP_syn.v,252|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \gray_addr_reg[7]  ( .D(N399), .CK(clk), .RN(n821), .QN(n384) );
+                          |
+ncelab: *W,CUVWSP (./LBP_syn.v,253|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \gray_addr_reg[6]  ( .D(N398), .CK(clk), .RN(n821), .QN(n383) );
+                          |
+ncelab: *W,CUVWSP (./LBP_syn.v,254|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \gray_addr_reg[5]  ( .D(N397), .CK(clk), .RN(n821), .QN(n382) );
+                          |
+ncelab: *W,CUVWSP (./LBP_syn.v,255|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \gray_addr_reg[4]  ( .D(N396), .CK(clk), .RN(n821), .QN(n381) );
+                          |
+ncelab: *W,CUVWSP (./LBP_syn.v,256|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \gray_addr_reg[3]  ( .D(N395), .CK(clk), .RN(n821), .QN(n380) );
+                          |
+ncelab: *W,CUVWSP (./LBP_syn.v,257|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \gray_addr_reg[2]  ( .D(N394), .CK(clk), .RN(n821), .QN(n379) );
+                          |
+ncelab: *W,CUVWSP (./LBP_syn.v,258|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \gray_addr_reg[1]  ( .D(N393), .CK(clk), .RN(n821), .QN(n378) );
+                          |
+ncelab: *W,CUVWSP (./LBP_syn.v,259|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \gray_addr_reg[0]  ( .D(N392), .CK(clk), .RN(n821), .QN(n377) );
                           |
 ncelab: *W,CUVWSP (./LBP_syn.v,260|26): 1 output port was not connected:
 ncelab: (./tsmc13_neg.v,18307): Q
 
-  DFFRX1 \gray_addr_reg[8]  ( .D(N406), .CK(clk), .RN(n848), .QN(n401) );
-                          |
-ncelab: *W,CUVWSP (./LBP_syn.v,261|26): 1 output port was not connected:
-ncelab: (./tsmc13_neg.v,18307): Q
-
-  DFFRX1 \gray_addr_reg[7]  ( .D(N405), .CK(clk), .RN(n848), .QN(n400) );
-                          |
-ncelab: *W,CUVWSP (./LBP_syn.v,262|26): 1 output port was not connected:
-ncelab: (./tsmc13_neg.v,18307): Q
-
-  DFFRX1 \gray_addr_reg[6]  ( .D(N404), .CK(clk), .RN(n848), .QN(n399) );
-                          |
-ncelab: *W,CUVWSP (./LBP_syn.v,263|26): 1 output port was not connected:
-ncelab: (./tsmc13_neg.v,18307): Q
-
-  DFFRX1 \gray_addr_reg[5]  ( .D(N403), .CK(clk), .RN(n848), .QN(n398) );
-                          |
-ncelab: *W,CUVWSP (./LBP_syn.v,264|26): 1 output port was not connected:
-ncelab: (./tsmc13_neg.v,18307): Q
-
-  DFFRX1 \gray_addr_reg[4]  ( .D(N402), .CK(clk), .RN(n848), .QN(n397) );
-                          |
-ncelab: *W,CUVWSP (./LBP_syn.v,265|26): 1 output port was not connected:
-ncelab: (./tsmc13_neg.v,18307): Q
-
-  DFFRX1 \gray_addr_reg[3]  ( .D(N401), .CK(clk), .RN(n848), .QN(n396) );
-                          |
-ncelab: *W,CUVWSP (./LBP_syn.v,266|26): 1 output port was not connected:
-ncelab: (./tsmc13_neg.v,18307): Q
-
-  DFFRX1 \gray_addr_reg[2]  ( .D(N400), .CK(clk), .RN(n848), .QN(n395) );
-                          |
-ncelab: *W,CUVWSP (./LBP_syn.v,267|26): 1 output port was not connected:
-ncelab: (./tsmc13_neg.v,18307): Q
-
-  DFFRX1 \gray_addr_reg[0]  ( .D(N398), .CK(clk), .RN(n848), .QN(n393) );
-                          |
-ncelab: *W,CUVWSP (./LBP_syn.v,268|26): 1 output port was not connected:
-ncelab: (./tsmc13_neg.v,18307): Q
-
-  DFFRX1 \gray_addr_reg[1]  ( .D(N399), .CK(clk), .RN(n848), .QN(n394) );
-                          |
-ncelab: *W,CUVWSP (./LBP_syn.v,269|26): 1 output port was not connected:
-ncelab: (./tsmc13_neg.v,18307): Q
+  DFFRX2 \pt_reg[13]  ( .D(n808), .CK(clk), .RN(n821), .Q(pt[13]) );
+                    |
+ncelab: *W,CUVWSP (./LBP_syn.v,268|20): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
 
 	Reading SDF file from location "LBP_syn.sdf"
 	Compiled SDF file "LBP_syn.sdf.X" older than source SDF file "LBP_syn.sdf".
@@ -352,15 +392,15 @@ ncelab: (./tsmc13_neg.v,18307): Q
 		Scale factors:         
 		Scale type:            
 	Annotation completed successfully...
-	SDF statistics: No. of Pathdelays = 5432  Annotated = 49.94% -- No. of Tchecks = 1908  Annotated = 37.74% 
+	SDF statistics: No. of Pathdelays = 5426  Annotated = 49.63% -- No. of Tchecks = 1908  Annotated = 37.74% 
 				        Total 	   Annotated	  Percentage
-		 Path Delays	        5432	        2713	       49.94
+		 Path Delays	        5426	        2693	       49.63
 		       $hold	          64	           0	        0.00
 		      $width	         721	         360	       49.93
 		  $setuphold	        1123	         360	       32.06
 	Building instance overlay tables: .................... Done
 	Generating native compiled code:
-		worklib.LBP:v <0x4775db8d>
+		worklib.LBP:v <0x289aeb04>
 			streams:   0, words:     0
 		worklib.lbp_mem:v <0x429d134e>
 			streams:   3, words:  1179
@@ -370,18 +410,18 @@ ncelab: (./tsmc13_neg.v,18307): Q
 	Loading native compiled code:     .................... Done
 	Design hierarchy summary:
 		                    Instances  Unique
-		Modules:                 1283     531
-		UDPs:                     379      12
-		Primitives:              3576      10
-		Timing outputs:           880      18
+		Modules:                 1284     531
+		UDPs:                     387      12
+		Primitives:              3557      10
+		Timing outputs:           867      19
 		Registers:                290     180
-		Scalar wires:            1158       -
+		Scalar wires:            1145       -
 		Expanded wires:             8       1
 		Always blocks:              2       2
 		Initial blocks:            17      17
 		Pseudo assignments:         1       1
 		Timing checks:           3031     131
-		Interconnect:            2325       -
+		Interconnect:            2297       -
 		Delayed tcheck signals:   935     357
 		Simulation timescale:     1ps
 	Writing initial simulation snapshot: worklib.testfixture:v
@@ -423,42 +463,42 @@ FSDB Dumper for IUS, Release Verdi_Q-2020.03, Linux, 02/09/2020
 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.gray_req(36)
 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.lbp_valid(36)
 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.finish(36)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.n851(36)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.n852(36)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.n853(36)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.n854(36)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.n855(36)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.n856(36)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.n857(36)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.n858(36)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.n859(36)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.n860(36)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.n861(36)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.n862(36)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.n863(36)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.n864(36)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.n865(36)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.n866(36)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.n867(36)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.n868(36)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.n869(36)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.n870(36)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.n871(36)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.n872(36)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.n873(36)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.n874(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.n825(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.n826(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.n827(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.n828(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.n829(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.n830(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.n831(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.n832(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.n833(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.n834(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.n835(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.n836(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.n837(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.n838(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.n839(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.n840(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.n841(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.n842(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.n843(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.n844(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.n845(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.n846(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.n847(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.n848(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.N84(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.N85(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.N86(36)
 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.N87(36)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.N88(36)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.N89(36)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.N90(36)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.\nx_state[0] (36)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.N112(36)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.N113(36)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.N114(36)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.N115(36)
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.N116(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.N96(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.N97(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.N98(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.N99(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.N100(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.N101(36)
 *Verdi* WARNING: The above messages are printed 50 times. No more similar message will be printed out.
-*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.N117(36)
+*Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.LBP.N102(36)
 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_lbp_mem.LBP_M(116)
 *Verdi* WARNING: [NoReadAccess][FilterOut]Name:testfixture.u_lbp_mem.i(25)
 *Verdi* : End of traversing.
@@ -510,7 +550,7 @@ Congratulations! All data have been generated successfully!
 
 -------------------------PASS------------------------
 
-Simulation complete via $finish(1) at time 960170 NS + 0
+Simulation complete via $finish(1) at time 642660 NS + 0
 ./testfixture.v:128       #(`CYCLE/2); $finish;
 ncsim> exit
-TOOL:	ncverilog	15.20-s039: Exiting on Jul 15, 2023 at 21:16:35 CST  (total: 00:00:35)
+TOOL:	ncverilog	15.20-s039: Exiting on Jul 15, 2023 at 22:41:52 CST  (total: 00:00:36)

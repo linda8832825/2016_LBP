@@ -6,7 +6,7 @@ Report : timing
         -max_paths 1
 Design : LBP
 Version: Q-2019.12
-Date   : Sat Jul 15 21:15:12 2023
+Date   : Sat Jul 15 22:38:03 2023
 ****************************************
 
 Operating Conditions: slow   Library: slow
@@ -28,16 +28,16 @@ Wire Load Model Mode: top
   clock network delay (ideal)              0.50       0.50
   input external delay                     5.00       5.50 f
   gray_ready (in)                          0.01       5.51 f
-  U995/Y (NAND2BX1)                        0.13       5.64 r
-  U479/Y (NOR3BXL)                         0.56       6.20 r
-  U478/Y (BUFX4)                           0.64       6.85 r
-  U987/Y (CLKINVX1)                        0.42       7.26 f
-  U436/Y (OA21XL)                          0.35       7.61 f
-  U435/Y (CLKBUFX3)                        0.68       8.29 f
-  U982/Y (AOI22X1)                         0.45       8.74 r
-  U975/Y (NAND4X1)                         0.23       8.97 f
-  gray_addr_reg[0]/D (DFFRX1)              0.00       8.97 f
-  data arrival time                                   8.97
+  U977/Y (NAND2X1)                         0.14       5.65 r
+  U464/Y (OAI211X1)                        0.27       5.92 f
+  U318/Y (CLKBUFX3)                        0.90       6.82 f
+  U440/Y (INVX3)                           0.59       7.41 r
+  U428/Y (NOR2X1)                          0.20       7.61 f
+  U427/Y (CLKBUFX3)                        0.64       8.25 f
+  U964/Y (AOI222XL)                        0.79       9.04 r
+  U963/Y (NAND4X1)                         0.26       9.30 f
+  gray_addr_reg[0]/D (DFFRX1)              0.00       9.30 f
+  data arrival time                                   9.30
 
   clock clk (rise edge)                   10.00      10.00
   clock network delay (ideal)              0.50      10.50
@@ -47,9 +47,9 @@ Wire Load Model Mode: top
   data required time                                 10.15
   -----------------------------------------------------------
   data required time                                 10.15
-  data arrival time                                  -8.97
+  data arrival time                                  -9.30
   -----------------------------------------------------------
-  slack (MET)                                         1.18
+  slack (MET)                                         0.85
 
 
 1

@@ -548,7 +548,7 @@ scope_to_save_with_macro
 open_file_dir
 open_rc_file_dir
 getSignalForm = 560 288 800 479 164 381 390 89
-viewPort = 0 23 1920 1009 214 77
+viewPort = 8 31 1920 1009 214 77
 signalSpacing = 5
 digitalSignalHeight = 15
 analogSignalHeight = 98
