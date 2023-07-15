@@ -1,27 +1,38 @@
-wvResizeWindow -win $_nWave1 1920 23 1920 1009
-wvResizeWindow -win $_nWave1 1920 31 897 202
-wvResizeWindow -win $_nWave1 1920 31 897 202
-wvResizeWindow -win $_nWave1 1920 31 897 202
-wvResizeWindow -win $_nWave1 1920 31 897 202
-wvResizeWindow -win $_nWave1 1920 31 897 202
-wvResizeWindow -win $_nWave1 1920 31 897 202
-wvResizeWindow -win $_nWave1 1920 31 897 202
-wvResizeWindow -win $_nWave1 1920 31 897 202
-wvResizeWindow -win $_nWave1 1920 31 897 202
-wvResizeWindow -win $_nWave1 1920 31 897 202
-wvResizeWindow -win $_nWave1 1920 31 897 202
-wvResizeWindow -win $_nWave1 1920 31 897 202
-wvResizeWindow -win $_nWave1 1920 31 897 202
-wvResizeWindow -win $_nWave1 1920 31 897 202
-wvResizeWindow -win $_nWave1 1920 31 897 202
-wvResizeWindow -win $_nWave1 1920 31 897 202
-wvResizeWindow -win $_nWave1 1920 31 897 202
-wvResizeWindow -win $_nWave1 1920 31 897 202
-wvResizeWindow -win $_nWave1 1920 23 1920 1009
-wvResizeWindow -win $_nWave1 1920 31 897 202
-wvResizeWindow -win $_nWave1 1920 31 897 202
-wvResizeWindow -win $_nWave1 1920 31 897 202
-wvResizeWindow -win $_nWave1 1920 31 897 202
-wvResizeWindow -win $_nWave1 1920 31 897 202
-wvResizeWindow -win $_nWave1 1920 31 897 202
-wvExit
+wvResizeWindow -win $_nWave1 0 23 1920 1009
+wvRestoreSignal -win $_nWave1 "/home/t111368148/Desktop/2016_LBP/signal.rc" \
+           -overWriteAutoAlias on -appendSignals on
+wvUnknownSaveResult -win $_nWave1 -clear
+wvGetSignalOpen -win $_nWave1
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvSetCursor -win $_nWave1 3137.891876 -snap {("G1" 4)}
+wvSelectSignal -win $_nWave1 {( "G1" 7 )} 
+wvSetCursor -win $_nWave1 12502.537943 -snap {("G1" 10)}
+wvSetCursor -win $_nWave1 16449.417568 -snap {("G1" 22)}
+wvSetCursor -win $_nWave1 13409.584814 -snap {("G1" 1)}
+wvSetCursor -win $_nWave1 3579.157921 -snap {("G1" 6)}
+wvSetCursor -win $_nWave1 16498.447129 -snap {("G1" 22)}
+wvSetCursor -win $_nWave1 7280.889743 -snap {("G2" 0)}
+wvSetCursor -win $_nWave1 10100.089476 -snap {("G2" 0)}
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvSetCursor -win $_nWave1 32849.805576 -snap {("G1" 22)}
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvSetCursor -win $_nWave1 3064.347535 -snap {("G1" 5)}
+wvSetCursor -win $_nWave1 4535.234352 -snap {("G1" 10)}
+wvSetCursor -win $_nWave1 2941.773634 -snap {("G1" 4)}
+wvSetCursor -win $_nWave1 4412.660451 -snap {("G1" 10)}
+wvSetCursor -win $_nWave1 3456.584020 -snap {("G1" 1)}
+wvSetCursor -win $_nWave1 15468.826357 -snap {("G1" 3)}
+wvSetCursor -win $_nWave1 13066.377890 -snap {("G1" 9)}
+wvSetCursor -win $_nWave1 13458.614374 -snap {("G1" 1)}
+wvSetCursor -win $_nWave1 2917.258853 -snap {("G1" 9)}
+wvSetCursor -win $_nWave1 3946.879625 -snap {("G1" 1)}
+wvSetCursor -win $_nWave1 3456.584020 -snap {("G1" 1)}
+wvSetCursor -win $_nWave1 15542.370698 -snap {("G1" 6)}
+wvSetCursor -win $_nWave1 18459.629551 -snap {("G1" 10)}
+wvSetCursor -win $_nWave1 19489.250323 -snap {("G1" 10)}

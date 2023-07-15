@@ -3,6 +3,5 @@
 // Do not modify this file
 //
 testfixture.v
-LBP_syn.v
-tsmc13_neg.v
-+define+SDF
+LBP.v
++access+r
