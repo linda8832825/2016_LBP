@@ -11,7 +11,7 @@ output reg          [13:0] 	gray_addr;
 output reg         	gray_req;
 output reg  [13:0] 	lbp_addr;
 output reg	        lbp_valid;
-output reg  [7:0] 	lbp_data;
+output wire  [7:0] 	lbp_data;
 output reg 	        finish;
 
 reg     [1:0]   cur_state, nx_state;
@@ -21,8 +21,11 @@ reg     [3:0]   count,i;
 reg     [7:0]   data    [0:8];
 reg     [13:0]  pt;
 
-reg     s       [0:8];
-wire    [7:0]   sol;
+// reg     s       [0:8];
+// wire    [7:0]   sol;
+
+// reg     [7:0]   mult    [0:7];
+
 
 parameter       STATE_IDLE=2'b00, STATE_RD=2'b01, STATE_CAL=2'b10, STATE_SD=2'b11;
 //====================================================================
@@ -134,28 +137,54 @@ end
 //================================================================
 
 //s
-always@(*) begin
-    if(cur_state == STATE_CAL)begin
-        for(i=0 ; i<=4'd8 ; i=i+1)begin
-            s[i] = (data[i] >= data[4]) ? 1 : 0 ;
-        end
-    end
-    else begin
-        for(i=0 ; i<=4'd8 ; i=i+1)begin
-            s[i] = 0;
-        end
-    end
-end
+// always@(*) begin
+//     if(cur_state == STATE_CAL)begin
+//         for(i=0 ; i<=4'd8 ; i=i+1)begin
+//             s[i] = (data[i] >= data[4]) ? 1 : 0 ;
+//         end
+//     end
+//     else begin
+//         for(i=0 ; i<=4'd8 ; i=i+1)begin
+//             s[i] = 0;
+//         end
+//     end
+// end
 
-//sol
-assign sol = s[0]*2**0 +
-             s[1]*2**1 +
-             s[2]*2**2 +
-             s[3]*2**3 +
-             s[5]*2**4 +
-             s[6]*2**5 +
-             s[7]*2**6 +
-             s[8]*2**7 ;
+
+//lbp_data
+assign lbp_data[0] = (data[0] >= data[4]) ? 1 : 0;
+assign lbp_data[1] = (data[1] >= data[4]) ? 1 : 0;
+assign lbp_data[2] = (data[2] >= data[4]) ? 1 : 0;
+assign lbp_data[3] = (data[3] >= data[4]) ? 1 : 0;
+assign lbp_data[4] = (data[5] >= data[4]) ? 1 : 0;
+assign lbp_data[5] = (data[6] >= data[4]) ? 1 : 0;
+assign lbp_data[6] = (data[7] >= data[4]) ? 1 : 0;
+assign lbp_data[7] = (data[8] >= data[4]) ? 1 : 0;
+
+// //sol
+// assign sol = s[0]*2**0 +
+//              s[1]*2**1 +
+//              s[2]*2**2 +
+//              s[3]*2**3 +
+//              s[5]*2**4 +
+//              s[6]*2**5 +
+//              s[7]*2**6 +
+//              s[8]*2**7 ;
+
+// //mult
+// always@(*) begin
+//     for(i=0 ; i<=7 ; i=i+1)begin
+//         if(i<=3)begin
+//             mult[i] = s[i] * (2**i);
+//         end
+//         else begin
+//             mult[i] = s[i+1] * (2**i);
+//         end
+//     end
+// end
+
+// //sol
+// assign sol = mult[0]+mult[1]+mult[2]+mult[3]+mult[4]+mult[5]+mult[6]+mult[7];
 
 //================================================================
 // STATE_SD
@@ -172,16 +201,16 @@ always@(posedge clk or posedge reset)begin
     end
 end
 
-//lbp_data
-always@(posedge clk or posedge reset)begin
-    if(reset) lbp_data <= 8'd0;
-    else begin
-        if(nx_state == STATE_SD) begin
-            lbp_data <= sol;
-        end
-        else lbp_data <= 8'd0;
-    end
-end
+// //lbp_data
+// always@(posedge clk or posedge reset)begin
+//     if(reset) lbp_data <= 8'd0;
+//     else begin
+//         if(nx_state == STATE_SD) begin
+//             lbp_data <= lbp_data;
+//         end
+//         else lbp_data <= 8'd0;
+//     end
+// end
 
 
 //================================================================

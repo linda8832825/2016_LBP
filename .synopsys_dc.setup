@@ -4,7 +4,7 @@
 
 set company "CIC"
 set designer "Student"
-set search_path      " cd /home/cell_lib/CBDK_TSMC018_Arm_v4.0/CIC/SynopsysDC/db/ $search_path"
+set search_path      " cd /opt/Design_kit/CBDK_IC_Contest_v2.1/SynopsysDC/db/ $search_path"
 set link_library     "* slow.db fast.db tpz973gvwc.db tpz973gvtc.db tpz973gvbc.db dw_foundation.sldb"
 set target_library   " slow.db fast.db tpz973gvwc.db tpz973gvtc.db tpz973gvbc.db"
 set symbol_library   "tsmc18.sdb generic.sdb"

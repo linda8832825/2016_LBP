@@ -3,6 +3,5 @@
 // Do not modify this file
 //
 testfixture.v
-LBP_syn.v
-tsmc18.v
-+define+SDF
+LBP.v
++access+r
